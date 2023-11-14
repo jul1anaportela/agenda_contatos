@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cliente</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/iphone.svg" alt="icone iphone">
+            <h1>Agenda de contatos</h1>
+        </header>
+    
+        <form id="form-cadastro">
+            <img src="images/user.svg" alt="icone user" id="imgUser">
+            <input type="text" id="nome-cliente" placeholder="Digite seu nome" required>
+            <img src="images/dialpad.svg" alt="icone teclado numérico" id="imgTel">
+            <input type="tel"  id="telefone-cliente" placeholder="Digite seu telefone" required>
+            <select id="estadosBR" required>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+            <button type="submit">+Add</button>
+        </form>
+    
+        <table id="tabela-cliente" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome do Cliente</th>
+                    <th>Telefone do Cliente</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td id="campo-recebe-nome">Juliana</td>
+                    <td id="campo-recebe-telefone">(98)98136-9480</td>
+                    <td id="campo-recebe-estado">MA</td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
